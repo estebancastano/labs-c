@@ -31,6 +31,8 @@ Actualizamos caracter_anterior con la nueva letra y reiniciamos el contador a 1 
 
 Lee el archivo comprimido en bloques de 5 bytes usando fread: primero 4 bytes como entero (contador) y luego 1 byte como carácter. Repite el carácter contador veces con un ciclo for imprimiéndolo con printf. Continúa hasta llegar al final del archivo.
 
+---
+
 ### Problemas presentados durante el desarrollo de la práctica y sus soluciones:
 - **Comprensión de funciones de C:** al ser un lenguaje nuevo, entender el funcionamiento de funciones como fread, fwrite, fgets, strstr y fopen resultó complejo al inicio. Se consultaron las páginas del manual (man) y documentación en línea para entender los parámetros que recibe cada función, qué retorna y cómo manejar los errores correctamente.
 
