@@ -63,7 +63,7 @@ Se utilizó el archivo `prueba.z` generado por wzip para descomprimir y verifica
 ---
 
 ### Enlace al vídeo:
-
+[Laboratorio 1 - Introducción al lenguaje C](https://www.youtube.com/watch?v=9F8uOmBEOIY)
 ---
 
 ### Manifiesto de transparencia:
