@@ -16,7 +16,7 @@ En el ciclo while lo que queremos hacer es que con fgets obtener caracter por ca
 #### wgrep.c:
 <img width="595" height="282" alt="image" src="https://github.com/user-attachments/assets/bfad0527-bd9b-4d8a-8dc7-13d011ebc8d0" />
 
-La función buscar_en_flujo recibe un término de búsqueda y un flujo de archivo. Lee línea por línea con fgets y usa strstr para verificar si la línea contiene el término. Si lo encuentra, imprime la línea. En el main se valida que se pasen argumentos; si solo se pasa el término sin archivo, lee desde `stdin`; si se pasan archivos, los abre uno por uno y llama a buscar_en_flujo.
+La función buscar_en_flujo recibe un término de búsqueda y un flujo de archivo. Lee línea por línea con fgets y usa strstr para verificar si la línea contiene el término. Si lo encuentra, imprime la línea. En el main se valida que se pasen argumentos; si solo se pasa el término sin archivo, lee desde stdin; si se pasan archivos, los abre uno por uno y llama a buscar_en_flujo.
 
 
 #### wzip.c:
