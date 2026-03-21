@@ -34,7 +34,7 @@ Lee el archivo comprimido en bloques de 5 bytes usando fread: primero 4 bytes co
 ### Problemas presentados durante el desarrollo de la práctica y sus soluciones:
 - **Comprensión de funciones de C:** al ser un lenguaje nuevo, entender el funcionamiento de funciones como fread, fwrite, fgets, strstr y fopen resultó complejo al inicio. Se consultaron las páginas del manual (man) y documentación en línea para entender los parámetros que recibe cada función, qué retorna y cómo manejar los errores correctamente.
 
-- **Archivo guardado en UTF-16 en lugar de UTF-8:** al crear archivos de prueba desde PowerShell, estos se guardaban en UTF-16 causando que los programas no leyeran el contenido correctamente. Solución: crear los archivos directamente desde VSCode verificando que el encoding fuera UTF-8.
+- **Archivo guardado en UTF-16 en lugar de UTF-8:** al crear archivos de prueba, estos se guardaban en UTF-16 causando que los programas no leyeran el contenido correctamente. Solución: crear los archivos directamente desde VSCode verificando que el encoding fuera UTF-8.
 
 ### Pruebas realizadas a los programas que verificaron su funcionalidad:
 
