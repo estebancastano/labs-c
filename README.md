@@ -29,10 +29,10 @@ Actualizamos caracter_anterior con la nueva letra y reiniciamos el contador a 1 
 #### wunzip:
 <img width="613" height="466" alt="image" src="https://github.com/user-attachments/assets/e66ffd24-c90a-435a-82ed-78c40643a092" />
 
-Lee el archivo comprimido en bloques de 5 bytes usando `fread`: primero 4 bytes como entero (`contador`) y luego 1 byte como carácter. Repite el carácter `contador` veces con un ciclo `for` imprimiéndolo con `printf`. Continúa hasta llegar al final del archivo.
+Lee el archivo comprimido en bloques de 5 bytes usando fread: primero 4 bytes como entero (contador) y luego 1 byte como carácter. Repite el carácter contador veces con un ciclo for imprimiéndolo con printf. Continúa hasta llegar al final del archivo.
 
 ### Problemas presentados durante el desarrollo de la práctica y sus soluciones:
-- **Comprensión de funciones de C:** al ser un lenguaje nuevo, entender el funcionamiento de funciones como `fread`, `fwrite`, `fgets`, `strstr` y `fopen` resultó complejo al inicio. Se consultaron las páginas del manual (`man`) y documentación en línea para entender los parámetros que recibe cada función, qué retorna y cómo manejar los errores correctamente.
+- **Comprensión de funciones de C:** al ser un lenguaje nuevo, entender el funcionamiento de funciones como fread, fwrite, fgets, strstr y fopen resultó complejo al inicio. Se consultaron las páginas del manual (man) y documentación en línea para entender los parámetros que recibe cada función, qué retorna y cómo manejar los errores correctamente.
 
 - **Archivo guardado en UTF-16 en lugar de UTF-8:** al crear archivos de prueba desde PowerShell, estos se guardaban en UTF-16 causando que los programas no leyeran el contenido correctamente. Solución: crear los archivos directamente desde VSCode verificando que el encoding fuera UTF-8.
 
@@ -43,14 +43,14 @@ Lee el archivo comprimido en bloques de 5 bytes usando `fread`: primero 4 bytes 
 
 #### wgrep.c:
 <img width="1447" height="220" alt="image" src="https://github.com/user-attachments/assets/4cfc1ca1-372b-4461-bc91-bcc0a65558c8" />
-Se probó buscando el término "hola" en el archivo `prueba.txt` que contenía las líneas "hola mundo", "adios mundo" y "hola de nuevo". El programa imprimió correctamente solo las líneas que contenían "hola". También se verificó que al no pasar argumentos mostrara el mensaje de error correspondiente.
+Se probó buscando el término "hola" en el archivo prueba.txt que contenía las líneas "hola mundo", "adios mundo" y "hola de nuevo". El programa imprimió correctamente solo las líneas que contenían "hola". También se verificó que al no pasar argumentos mostrara el mensaje de error correspondiente.
 
 #### wzip.c:
 <img width="1412" height="254" alt="image" src="https://github.com/user-attachments/assets/95285c11-e2ab-44a5-a689-bd6d051ec722" />
 
 #### wunzip.c: 
 <img width="885" height="251" alt="image" src="https://github.com/user-attachments/assets/13df7a53-0e74-43d6-b9ce-ba5a437d6cb9" />
-Se utilizó el archivo `prueba.z` generado por wzip para descomprimir y verificar que el contenido resultante fuera idéntico al archivo original `prueba.txt`.
+Se utilizó el archivo `prueba.z` generado por wzip para descomprimir y verificar que el contenido resultante fuera idéntico al archivo original prueba.txt.
 
 ### Enlace al vídeo:
 
@@ -58,5 +58,5 @@ Se utilizó el archivo `prueba.z` generado por wzip para descomprimir y verifica
 
 ### Manifiesto de transparencia:
 Se utilizó IA generativa (Claude) como apoyo en los siguientes puntos:
-- **Problema de encoding UTF-16 vs UTF-8:** al crear el archivo `prueba.txt`, el archivo se guardaba en UTF-16 causando que `wgrep` no encontrara coincidencias. La IA identificó el problema y sugirió crear el archivo desde VSCode en UTF-8.
+- **Problema de encoding UTF-16 vs UTF-8:** al crear el archivo prueba.txt, el archivo se guardaba en UTF-16 causando que wgrep no encontrara coincidencias. La IA identificó el problema y sugirió crear el archivo desde VSCode en UTF-8.
 
