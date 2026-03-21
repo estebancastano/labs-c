@@ -38,10 +38,14 @@ Lee el archivo comprimido en bloques de 5 bytes usando fread: primero 4 bytes co
 
 - **Archivo guardado en UTF-16 en lugar de UTF-8:** al crear archivos de prueba, estos se guardaban en UTF-16 causando que los programas no leyeran el contenido correctamente. Solución: crear los archivos directamente desde VSCode verificando que el encoding fuera UTF-8.
 
+---
+
 ### Pruebas realizadas a los programas que verificaron su funcionalidad:
 
 #### wcat.c:
 <img width="1434" height="271" alt="image" src="https://github.com/user-attachments/assets/1504ddb1-e265-4104-af96-5c2bc02cf729" />
+
+Creamos un archivo con el contenido: Hola este es un archivo de prueba para el funcionamiento de wcat. Y cuando se ejecuta muestra efectivamente el contenido del archivo.
 
 #### wgrep.c:
 <img width="1447" height="220" alt="image" src="https://github.com/user-attachments/assets/4cfc1ca1-372b-4461-bc91-bcc0a65558c8" />
@@ -49,10 +53,14 @@ Se probó buscando el término "hola" en el archivo prueba.txt que contenía las
 
 #### wzip.c:
 <img width="1412" height="254" alt="image" src="https://github.com/user-attachments/assets/95285c11-e2ab-44a5-a689-bd6d051ec722" />
+Comprimimos el archivo test_wzip.txt con el comando ./wzip test_wzip.txt > test_wzip.z.
+
 
 #### wunzip.c: 
 <img width="885" height="251" alt="image" src="https://github.com/user-attachments/assets/13df7a53-0e74-43d6-b9ce-ba5a437d6cb9" />
 Se utilizó el archivo `prueba.z` generado por wzip para descomprimir y verificar que el contenido resultante fuera idéntico al archivo original prueba.txt.
+
+---
 
 ### Enlace al vídeo:
 
