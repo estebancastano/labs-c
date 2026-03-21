@@ -15,6 +15,7 @@ En el ciclo while lo que queremos hacer es que con fgets obtener caracter por ca
 
 #### wgrep.c:
 <img width="595" height="282" alt="image" src="https://github.com/user-attachments/assets/bfad0527-bd9b-4d8a-8dc7-13d011ebc8d0" />
+
 La función `buscar_en_flujo` recibe un término de búsqueda y un flujo de archivo. Lee línea por línea con `fgets` y usa `strstr` para verificar si la línea contiene el término. Si lo encuentra, imprime la línea. En el `main` se valida que se pasen argumentos; si solo se pasa el término sin archivo, lee desde `stdin`; si se pasan archivos, los abre uno por uno y llama a `buscar_en_flujo`.
 
 
@@ -27,6 +28,7 @@ Actualizamos caracter_anterior con la nueva letra y reiniciamos el contador a 1 
 
 #### wunzip:
 <img width="613" height="466" alt="image" src="https://github.com/user-attachments/assets/e66ffd24-c90a-435a-82ed-78c40643a092" />
+
 Lee el archivo comprimido en bloques de 5 bytes usando `fread`: primero 4 bytes como entero (`contador`) y luego 1 byte como carácter. Repite el carácter `contador` veces con un ciclo `for` imprimiéndolo con `printf`. Continúa hasta llegar al final del archivo.
 
 ### Problemas presentados durante el desarrollo de la práctica y sus soluciones:
